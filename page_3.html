@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agify API</title>
+  <script src="scripts/page_3.js" defer></script>
+  <link rel="stylesheet" href="styles/page_3.css">
+</head>
+<body>
+  <h1>Agify API</h1>
+
+  <h2>Descrição</h2>
+  <p>
+    A <strong>Agify API</strong> estima a idade de uma pessoa com base no nome fornecido. Não requer autenticação.
+  </p>
+
+  <h2>Demonstrativo via Curl</h2>
+  <div class="code-block">
+    <p><strong>Comando:</strong></p>
+    <pre><code>curl "https://api.agify.io?name=maria"</code></pre>
+
+    <p><strong>Exemplo de saída esperada:</strong></p>
+    <pre><code>{
+  "name": "maria",
+  "age": 34,
+  "count": 53492
+}</code></pre>
+  </div>
+
+  <h2>Demonstração Real:</h2>
+  <input id="nome" placeholder="Digite um nome">
+  <button id="buscar_idade">Estimar Idade</button>
+
+  <div id="resultado_idade">
+    <p id="nome_pessoa"></p>
+    <p id="idade_estimativa"></p>
+    <p id="quantidade"></p>
+  </div>
+
+  <p id="erro_idade"></p>
+
+  <a href="index.html">Voltar à página inicial</a>
+</body>
+</html>

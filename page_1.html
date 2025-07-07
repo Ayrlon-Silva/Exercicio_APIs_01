@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDb API</title>
+    <script src="scripts/page_1.js" defer></script>
+    <link rel="stylesheet" href="styles/page_1.css">
+</head>
+<body>
+    <h1>OMDb API</h1>
+           
+        <h2>Descrição</h2>
+
+        <p>A <strong>OMDb API</strong> (Open Movie Database) é uma interface REST que fornece dados completos sobre filmes, séries e episódios de TV. Ela permite buscar informações como título, ano, duração, sinopse, pôster e mais.</p>
+
+        <h2>Demosntração via Curl</h2>
+
+        <div class="code-block">
+        <p><strong>Comando:</strong></p>
+        <pre><code>curl "http://www.omdbapi.com/?t=TITULO_DA_OBRA&apikey=SUA_APIKEY"</code></pre>
+
+        <p><strong>Exemplo de saída esperada:</strong></p>
+        <pre><code>
+        {
+        "Title": "Spider-Man",
+        "Year": "2002",
+        "Rated": "PG-13",
+        "Released": "03 May 2002",
+        "Runtime": "121 min",
+        ...
+        "Director": "Sam Raimi",
+        "Poster": "img.jpg",
+        "Type": "movie",
+        "Response": "True"
+        }</code></pre>
+        </div>
+
+        <h2>Demosntração Real: </h2>
+        
+        <div> <!--Sessão para perquisar um filme e exibir o resultado com as informações sobre ele-->
+        <input id="nome_filme" placeholder="Digite um titulo">
+        <button id="btn_buscar_filme">Pesquisar Filme</button>
+
+        <div id="filme_pesquisado">
+            <img id="foto_filme" src="" alt="">
+            <p id="titulo_filme">Titulo: </p>
+            <p id="ano_filme">Ano de lançamento: </p>
+            <p id="duracao_filme">Duração: </p>
+        </div>
+
+        <p id="erro_filme"></p> <!--Paragrafo para exibir erro-->
+
+        </div>
+
+    <a href="Index.html">Voltar a Pagina inicial</a>
+</body>
+</html>

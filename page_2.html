@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima - WeatherAPI</title>
+  <script src="scripts/page_2.js" defer></script>
+  <link rel="stylesheet" href="styles/page_2.css">
+</head>
+<body>
+  <h1>WeatherAPI</h1>
+
+  <h2>Descrição</h2>
+  <p>
+    A <strong>WeatherAPI</strong> fornece dados climáticos atuais, previsão e histórico. É necessário obter uma <strong>API key gratuita</strong> no site <a href="https://www.weatherapi.com/">weatherapi.com</a>.
+  </p>
+
+  <h2>Demonstrativo via Curl</h2>
+  <div class="code-block">
+    <p><strong>Comando:</strong></p>
+    <pre><code>curl "http://api.weatherapi.com/v1/current.json?key=SUA_CHAVE&q=São Paulo&lang=pt"</code></pre>
+
+    <p><strong>Exemplo de saída esperada:</strong></p>
+    <pre><code>{
+  "location": {
+    "name": "São Paulo",
+    "country": "Brazil"
+  },
+  "current": {
+    "temp_c": 23.0,
+    "condition": {
+      "text": "Parcialmente nublado",
+      "icon": "//cdn.weatherapi.com/..."
+    }
+  }
+}</code></pre>
+  </div>
+
+  <h2>Demonstração Real:</h2>
+  <input id="cidade" placeholder="Digite a cidade">
+  <button id="buscar_clima">Buscar Clima</button>
+
+  <div id="resultado_clima">
+    <img id="icone_clima" src="" alt="">
+    <p id="cidade_nome"></p>
+    <p id="temperatura"></p>
+    <p id="condicao"></p>
+  </div>
+
+  <p id="erro"></p>
+
+  <a href="index.html">Voltar à página inicial</a>
+</body>
+</html>

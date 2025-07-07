@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API RandomFox</title>
+    <link rel="stylesheet" href="styles/page_4.css">
+    <script src="scripts/page_4.js" defer></script>
+</head>
+<body> 
+    <h1>API RandomFox</h1>
+
+        <h2>Descrição</h2>
+
+        <p>A API RandomFox fornece imagens aleatórias de raposas de forma simples e gratuita. Ao fazer uma requisição HTTP, ela retorna um objeto JSON contendo a URL de uma imagem de raposa e um link de referência.</p>
+
+        <h2>Demosntração via Curl</h2>
+
+        <div class="code-block">
+        <p><strong>Comando: curl -L https://randomfox.ca/floof</strong></p>
+        <pre><code></code></pre>
+        
+        <p><strong>Exemplo de saída esperada:</strong></p>
+        <pre><code>
+        {
+            "image":"https:\/\/randomfox.ca\/images\/37.jpg",
+            "link":"https:\/\/randomfox.ca\/?i=37"
+        }
+        </code></pre>
+        </div>
+
+        <h2>Demosntração Real: </h2>
+
+        <button id="btn_mostrar_imagem">Mostrar Imagem</button>
+
+        <div id="resultado_imagem">
+            <img id="foto_raposa" src="" alt="">
+        </div>
+
+         <p id="erro_foto"></p>
+
+         <a href="Index.html">Voltar a Pagina inicial</a>
+</body>
+</html>
