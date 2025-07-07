@@ -35,3 +35,8 @@ Consumir e demonstrar, de forma prática, o funcionamento de **quatro APIs públ
 - Ayrlon Silva  
 - Paulo Cesar
 - Paulo Neres
+
+## 📷 Demonstração
+
+Acesse a página hospedada via **GitHub Pages**:  
+🔗 [https://ayrlon-silva.github.io/Exercicio_APIs_01/Index.html](https://ayrlon-silva.github.io/Exercicio_APIs_01/Index.html)
